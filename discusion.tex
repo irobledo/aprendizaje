@@ -1,0 +1,13 @@
+\section{Discusión.}
+
+A lo largo del artículo se han expuesto varios temas que merece la pena poner bajo discusión para evaluar su eficiencia a la hora de construir modelos analíticos como los mostrados en el mismo.
+
+Una de las primera preguntas es, ¿merece la pena utilizar información agregada de los censos dentro de los modelos? Los censos contienen información que una vez publicada suele estar bastante desactualizada porque ha sido recogido hace bastante tiempo, ya que el proceso de recolección es muy costoso y laborioso en tiempo. La información de los censos es información agregada. ¿Qué validez tiene esta información al llevarla a nivel individual? ¿Realmente toda la gente que vive en una zona determinada comparte las mismas características? Todo esto lleva a concluir que el uso de información de censos y bases de datos de enriquecimiento agregadas puede utilizarse como refuerzo en la construcción de un modelo siempre que no supongan un excesivo coste extra tanto económico como en horas de desarrollo de los modelos.
+
+Continuando con el tema de la información a utilizar en la construcción del modelo conviene preguntarse, ¿cómo de efectiva es la selección de variables por el criterio del test de la chi-cuadrado? ¿Es positivo poner una restricción del p-valor igual a 0,05 para realizar la selección o por ser tan estrictos se estarán dejando de lado variables importantes que pueden explicar significativamente una parte de los resultados del modelo? Tras el ejercicio desarrollado en el artículo se puede concluir que el criterio de 0,05 puede resultar demasiado estricto y perjudicar la posible eficiencia de los modelos a construir.
+
+Un tercer punto de debate es la necesidad de balancear las muestras para que algunos algoritmos puedan aprender. ¿Hasta que punto las diferentes técnicas de sobremuestreo son eficientes? ¿Qué impacto tiene la pérdida de información que se produce? ¿Son eficientes las técnicas de sobremuestreo como la técnica SMOTE \cite{SMOTE}? Realmente no hay una respuesta clara y solo la experiencia y diferentes pruebas sobre cada conjunto de datos pueden ayudar a definir la mejor solución para cada problema.
+
+Estas son las cuestiones más relevantes que pueden extraerse del artículo y que sólo la experiencia y la práctica con múltiples problemas y situaciones puede ayudar a encontrar las mejores y óptimas soluciones.
+
+

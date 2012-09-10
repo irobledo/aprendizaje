@@ -1,0 +1,54 @@
+\section{Descripción del problema.}
+
+La PVA (Asociación de Veteranos Paralíticos de América) realizo un mailing a 3,5 millones de anteriores donantes en Junio de 1997. La PVA esta muy interesada en construir un modelo analítico de selección de donantes para recibir la campaña específico para los donantes inactivos cuya última donación ocurrío hace más de 12 y menos de 24 meses. Estos inactivos son 191.779 donantes que han sido repartidos en dos conjuntos de datos diferentes:
+
+\begin{itemize}
+
+\item{Training data set: conjunto de datos de aprendizaje formado por 95.412 donantes de los cuales 4.843 hicieron una nueva donación tras recibir el mailing (5,1 \%).}
+
+\item{Validation data set: conjunto de datos de validación formado por 96.367 donantes de los cuales 4.873 hicieron una nueva donación tras recibir el mailing (5,1 \%).}
+
+\end{itemize}
+
+El conjunto de entrenamiento y el conjunto de validación han sido construidos de forma aleatoria a partir de la población inicial con lo que en principio, no debe existir ningún sesgo en los mismos, permitiendo realizar una correcta validación de la eficiencia de los modelos una vez que sean construidos.
+
+Cada mailing enviado por la asociación le supuso un coste de 0,68\$ por pieza producida y enviada. 
+
+\subsection{Descripción del contenido de los conjuntos de datos.}
+
+Cada uno de los conjuntos de datos anteriormente comentados contiene los siguientes bloques de información:
+
+\begin{itemize}
+
+\item{Información detallada del donante: fecha de primera donación, estado de residencia, origen de los datos del donante, etc.}
+\item{Información de las campañas realizadas sobre cada donante por la PVA en los últimos 24 meses y donaciones recibidas en el mismo periodo.}
+\item{Variables resumen del total de donaciones realizadas por cada donante y estructuradas por tipo de campaña a la que fueron atribuidas.}
+\item{Variables socidodemográficas obtenidas del censo de los EEUU asociadas a cada donante a partir de la dirección de residencia geolocalizada.}
+
+\end{itemize}
+
+El total de variables incluidas en los bloques anteriores son 481. Se distribuyen por cada uno de los bloques del siguiente modo:
+
+\begin{itemize}
+
+\item{Información detallada del donante: 94 variables.}
+\item{Información de las campañas realizadas por la PVA en los últimos 24 meses y donaciones: 91 variables}
+\item{Variables resumen del total de donaciones realizadas por cada cliente: 10 variables.}
+\item{Variables socidodemográficas obtenidas del censo de los EEUU: 286 variables.}
+
+\end{itemize}
+
+\subsection{Modelos objetivo.}
+
+El objetivo final de estos trabajo es proporcionar a la PVA una o varias herramientas que le permitan seleccionar dentro de los 191.779 donantes inactivos, aquellos más propensos a realizar la donación de forma que puedan reducir el coste del envío de las campañas, y no tener que enviar a los 191.779. Las cifras medias actuales de una campaña podrían ser las siguientes:
+
+\begin{itemize}
+
+\item{191.000 envíos a 0,69\$ por envio supone un coste de campaña de 131.790,00\$.}
+\item{Una respuesta en torno al 5% suponen aproximadamente 9.550 donaciones.}
+\item{Una donación media en torno a los 79\$ supone recibir aproximadamente 769.000\$ en donaciones.}
+\item{Esto supone un margen de unos 637.000\$ para la campaña.}
+
+\end{itemize}
+
+Para cubrir este objetivo se van a desarrollar diferentes clasificadores con diferentes técnica de aprendizaje que permitan clasificar a los potenciales donantes en función de si donan o no donan. Se seleccionará el clasificador con mejores resultados para aplicarlo a futuras campañas.
