@@ -42,6 +42,15 @@ Y esta es la tabla que muestra los diferentes parámetros probados previos al de
 \end{center}
 \end{figure}
 
+A continuación se muestra una captura de pantalla de la salida del algoritmo mostrada por la herramienta Weka:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/j48-3}
+\caption{Salida parcial de la herramienta WEKA del modelo construido con el algoritmo J48.}
+\end{center}
+\end{figure}
+
 \subsection{M5P.}
 
 La variable target es una variable discreta y no ha sido posible probar el algoritmo M5P.
@@ -59,10 +68,84 @@ A continuación se muestra la información de los diferentes modelos construidos
 
 \subsection{IBK.}
 
+A continuación se muestra la información de los diferentes modelos construidos con el algoritmo IB1. En este caso no se ha seleccionado ningún modelo de referencia dado que todos los construidos tiene resultados muy por debajo de los obtenidos con los algoritmos anteriores.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/ibk-2}
+\caption{Modelos construidos con el algoritmo IBK.}
+\end{center}
+\end{figure}
+
+Como puede observarse los mejores resultados se obtuvieron configurando el algoritmo con 10 vecinos y pesando por el inverso de la distancia.
+
+A continuación se muestra una captura de pantalla de la salida del algoritmo mostrada por la herramienta Weka:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/ibk-1}
+\caption{Salida parcial de la herramienta WEKA del modelo construido con el algoritmo IBk.}
+\end{center}
+\end{figure}
+
 \subsection{Naive Bayes.}
+
+A continuación se muestra la información de los diferentes modelos construidos con el algoritmo Naive Bayes. En este caso se ha seleccionado el modelo V2 como modelo de referencia aunque su <<performance>> es inferior a la obtenida con los algoritmos ID3 y J48.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/nb-1}
+\caption{Modelos construidos con el algoritmo Naive Bayes.}
+\end{center}
+\end{figure}
 
 \subsection{TAN.}
 
+A continuación se muestra la información de los diferentes modelos construidos con el algoritmo TAN. No se observa mejora respecto a los construidos con el algoritmo Naive Bayes y no se ha seleccionado ningún modelo de referencia.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/tan-1}
+\caption{Modelos construidos con el algoritmo TAN.}
+\end{center}
+\end{figure}
+
 \subsection{Logistic.}
 
+A continuación se muestra la información de los diferentes modelos construidos con el algoritmo Logistic. No se observa mejora respecto a los construidos con los algoritmos ID3 y J48 y no se ha seleccionado ningún modelo de referencia.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/logistic-2}
+\caption{Modelos construidos con el algoritmo LOGISTIC.}
+\end{center}
+\end{figure}
+
+Y una captura de pantalla de la herramienta WEKA mostrando las Betas asociadas a cada una de las variables del modelo V4:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/logistic-1}
+\caption{Salida parcial de la herramienta WEKA del modelo construido con el algoritmo LOGISTIC.}
+\end{center}
+\end{figure}
+
 \subsection{JRIP.}
+
+A continuación se muestra la información de los diferentes modelos construidos con el algoritmo JRIP:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/jrip-2}
+\caption{Modelos construidos con el algoritmo JRIP.}
+\end{center}
+\end{figure}
+
+Y una captura de pantalla de la herramienta WEKA mostrando las reglas inducidas por el algoritmo:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{img/jrip-1}
+\caption{Salida parcial de la herramienta WEKA del modelo construido con el algoritmo JRIP.}
+\end{center}
+\end{figure}
